@@ -16,7 +16,7 @@ importers:
     dependencies:
       '@angular-builders/custom-webpack':
         specifier: ^14.0.1
-        version: 14.1.0(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4))(@types/node@20.10.6)(chokidar@3.5.3)(html-webpack-plugin@5.6.0(webpack@5.91.0))(karma@6.4.3)(typescript@4.7.4)
+        version: 14.1.0(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5))(@types/node@20.10.6)(chokidar@3.5.3)(html-webpack-plugin@5.6.0(webpack@5.91.0))(karma@6.4.3)(typescript@4.9.5)
       '@angular/animations':
         specifier: ^14.2.0
         version: 14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8))
@@ -71,13 +71,13 @@ importers:
     devDependencies:
       '@angular-devkit/build-angular':
         specifier: 14.2.13
-        version: 14.2.13(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4))(chokidar@3.5.3)(html-webpack-plugin@5.6.0(webpack@5.91.0))(karma@6.4.3)(typescript@4.7.4)
+        version: 14.2.13(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5))(chokidar@3.5.3)(html-webpack-plugin@5.6.0(webpack@5.91.0))(karma@6.4.3)(typescript@4.9.5)
       '@angular/cli':
         specifier: 14.2.13
         version: 14.2.13(chokidar@3.5.3)
       '@angular/compiler-cli':
         specifier: 14.2.12
-        version: 14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4)
+        version: 14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5)
       '@ngxs/devtools-plugin':
         specifier: 3.8.2
         version: 3.8.2(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8))(@ngxs/store@3.8.2(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8))(rxjs@7.5.7))(rxjs@7.5.7)
@@ -109,8 +109,8 @@ importers:
         specifier: 2.1.0
         version: 2.1.0(jasmine-core@4.6.0)(karma-jasmine@5.1.0(karma@6.4.3))(karma@6.4.3)
       typescript:
-        specifier: 4.7.4
-        version: 4.7.4
+        specifier: 4.9.5
+        version: 4.9.5
 
   react-user-list:
     dependencies:
@@ -1655,7 +1655,7 @@ packages:
   '@webpack-cli/configtest@1.2.0':
     resolution: {integrity: sha512-4FB8Tj6xyVkyqjj1OaTqCjXYULB9FMkqQ8yGrZjRDrYh0nOE+7Lhs45WioWQQMV+ceFlE368Ukhe6xdvJM9Egg==}
     peerDependencies:
-      webpack: 4.x.x || 5.x.x
+      webpack: 5.91.0
       webpack-cli: 4.x.x
 
   '@webpack-cli/info@1.5.0':
@@ -1842,7 +1842,7 @@ packages:
     engines: {node: '>= 8.9'}
     peerDependencies:
       '@babel/core': ^7.0.0
-      webpack: 5.89.0
+      webpack: 5.91.0
 
   babel-plugin-istanbul@6.1.1:
     resolution: {integrity: sha512-Y1IQok9821cC9onCx5otgFfRm7Lm+I+wwxOx738M/WLPZ9Q42m4IG5W0FNX8WLL2gYMZo3JkuXIH2DOpWM+qwA==}
@@ -2982,6 +2982,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
@@ -4614,11 +4615,6 @@ packages:
   typed-assert@1.0.9:
     resolution: {integrity: sha512-KNNZtayBCtmnNmbo5mG47p1XsCyrx6iVqomjcZnec/1Y5GGARaxPs6r49RnSPeUP3YjNYiU9sQHAtY4BBvnZwg==}
 
-  typescript@4.7.4:
-    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
-    engines: {node: '>=4.2.0'}
-    hasBin: true
-
   typescript@4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
@@ -5011,14 +5007,14 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.3
       '@jridgewell/trace-mapping': 0.3.20
 
-  '@angular-builders/custom-webpack@14.1.0(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4))(@types/node@20.10.6)(chokidar@3.5.3)(html-webpack-plugin@5.6.0(webpack@5.91.0))(karma@6.4.3)(typescript@4.7.4)':
+  '@angular-builders/custom-webpack@14.1.0(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5))(@types/node@20.10.6)(chokidar@3.5.3)(html-webpack-plugin@5.6.0(webpack@5.91.0))(karma@6.4.3)(typescript@4.9.5)':
     dependencies:
       '@angular-devkit/architect': 0.1402.13(chokidar@3.5.3)
-      '@angular-devkit/build-angular': 14.2.13(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4))(chokidar@3.5.3)(html-webpack-plugin@5.6.0(webpack@5.91.0))(karma@6.4.3)(typescript@4.7.4)
+      '@angular-devkit/build-angular': 14.2.13(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5))(chokidar@3.5.3)(html-webpack-plugin@5.6.0(webpack@5.91.0))(karma@6.4.3)(typescript@4.9.5)
       '@angular-devkit/core': 14.2.13(chokidar@3.5.3)
-      '@angular/compiler-cli': 14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4)
+      '@angular/compiler-cli': 14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5)
       lodash: 4.17.21
-      ts-node: 10.9.2(@types/node@20.10.6)(typescript@4.7.4)
+      ts-node: 10.9.2(@types/node@20.10.6)(typescript@4.9.5)
       tsconfig-paths: 3.15.0
       webpack-merge: 5.10.0
     transitivePeerDependencies:
@@ -5052,13 +5048,13 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  '@angular-devkit/build-angular@14.2.13(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4))(chokidar@3.5.3)(html-webpack-plugin@5.6.0(webpack@5.91.0))(karma@6.4.3)(typescript@4.7.4)':
+  '@angular-devkit/build-angular@14.2.13(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5))(chokidar@3.5.3)(html-webpack-plugin@5.6.0(webpack@5.91.0))(karma@6.4.3)(typescript@4.9.5)':
     dependencies:
       '@ampproject/remapping': 2.2.0
       '@angular-devkit/architect': 0.1402.13(chokidar@3.5.3)
       '@angular-devkit/build-webpack': 0.1402.13(chokidar@3.5.3)(webpack-dev-server@4.11.0(webpack@5.89.0(esbuild@0.15.5)))(webpack@5.89.0(esbuild@0.15.5))
       '@angular-devkit/core': 14.2.13(chokidar@3.5.3)
-      '@angular/compiler-cli': 14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4)
+      '@angular/compiler-cli': 14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5)
       '@babel/core': 7.18.10
       '@babel/generator': 7.18.12
       '@babel/helper-annotate-as-pure': 7.18.6
@@ -5069,7 +5065,7 @@ snapshots:
       '@babel/runtime': 7.18.9
       '@babel/template': 7.18.10
       '@discoveryjs/json-ext': 0.5.7
-      '@ngtools/webpack': 14.2.13(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4))(typescript@4.7.4)(webpack@5.89.0(esbuild@0.15.5))
+      '@ngtools/webpack': 14.2.13(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5))(typescript@4.9.5)(webpack@5.89.0(esbuild@0.15.5))
       ansi-colors: 4.1.3
       babel-loader: 8.2.5(@babel/core@7.18.10)(webpack@5.89.0(esbuild@0.15.5))
       babel-plugin-istanbul: 6.1.1
@@ -5112,7 +5108,7 @@ snapshots:
       text-table: 0.2.0
       tree-kill: 1.2.2
       tslib: 2.4.0
-      typescript: 4.7.4
+      typescript: 4.9.5
       webpack: 5.89.0(esbuild@0.15.5)
       webpack-dev-middleware: 5.3.3(webpack@5.89.0(esbuild@0.15.5))
       webpack-dev-server: 4.11.0(webpack@5.91.0)
@@ -5203,7 +5199,7 @@ snapshots:
       rxjs: 7.5.7
       tslib: 2.6.2
 
-  '@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4)':
+  '@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5)':
     dependencies:
       '@angular/compiler': 14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8))
       '@babel/core': 7.24.3
@@ -5215,7 +5211,7 @@ snapshots:
       semver: 7.5.4
       sourcemap-codec: 1.4.8
       tslib: 2.6.2
-      typescript: 4.7.4
+      typescript: 4.9.5
       yargs: 17.7.2
     transitivePeerDependencies:
       - supports-color
@@ -6832,10 +6828,10 @@ snapshots:
       '@module-federation/runtime': 0.1.6
       '@module-federation/sdk': 0.1.6
 
-  '@ngtools/webpack@14.2.13(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4))(typescript@4.7.4)(webpack@5.89.0(esbuild@0.15.5))':
+  '@ngtools/webpack@14.2.13(@angular/compiler-cli@14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5))(typescript@4.9.5)(webpack@5.89.0(esbuild@0.15.5))':
     dependencies:
-      '@angular/compiler-cli': 14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.7.4)
-      typescript: 4.7.4
+      '@angular/compiler-cli': 14.2.12(@angular/compiler@14.3.0(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8)))(typescript@4.9.5)
+      typescript: 4.9.5
       webpack: 5.89.0(esbuild@0.15.5)
 
   '@ngxs/devtools-plugin@3.8.2(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8))(@ngxs/store@3.8.2(@angular/core@14.3.0(rxjs@7.5.7)(zone.js@0.11.8))(rxjs@7.5.7))(rxjs@7.5.7)':
@@ -10485,7 +10481,7 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  ts-node@10.9.2(@types/node@20.10.6)(typescript@4.7.4):
+  ts-node@10.9.2(@types/node@20.10.6)(typescript@4.9.5):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.9
@@ -10499,7 +10495,7 @@ snapshots:
       create-require: 1.1.1
       diff: 4.0.2
       make-error: 1.3.6
-      typescript: 4.7.4
+      typescript: 4.9.5
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
@@ -10526,8 +10522,6 @@ snapshots:
       mime-types: 2.1.35
 
   typed-assert@1.0.9: {}
-
-  typescript@4.7.4: {}
 
   typescript@4.9.5: {}
 
