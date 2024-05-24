@@ -27,11 +27,11 @@ importers:
         specifier: 29.5.12
         version: 29.5.12
       '@types/react':
-        specifier: 18.2.64
-        version: 18.2.64
+        specifier: 18.3.3
+        version: 18.3.3
       '@types/react-dom':
-        specifier: 18.2.21
-        version: 18.2.21
+        specifier: 18.3.0
+        version: 18.3.0
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -89,11 +89,11 @@ importers:
         specifier: 29.5.12
         version: 29.5.12
       '@types/react':
-        specifier: 18.2.64
-        version: 18.2.64
+        specifier: 18.3.3
+        version: 18.3.3
       '@types/react-dom':
-        specifier: 18.2.21
-        version: 18.2.21
+        specifier: 18.3.0
+        version: 18.3.0
       customize-cra:
         specifier: 1.0.0
         version: 1.0.0
@@ -1432,23 +1432,17 @@ packages:
   '@types/range-parser@1.2.7':
     resolution: {integrity: sha512-hKormJbkJqzQGhziax5PItDUTMAM9uE2XXQmM37dyd4hVM+5aVl7oVxMVUiVQn2oCQFN/LKCZdvSM0pFRqbSmQ==}
 
-  '@types/react-dom@18.0.11':
-    resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
+  '@types/react-dom@18.3.0':
+    resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
 
-  '@types/react-dom@18.2.21':
-    resolution: {integrity: sha512-gnvBA/21SA4xxqNXEwNiVcP0xSGHh/gi1VhWv9Bl46a0ItbTT5nFY+G9VSQpaG/8N/qdJpJ+vftQ4zflTtnjLw==}
-
-  '@types/react@18.2.64':
-    resolution: {integrity: sha512-MlmPvHgjj2p3vZaxbQgFUQFvD8QiZwACfGqEdDSWou5yISWxDQ4/74nCAwsUiX7UFLKZz3BbVSPj+YxeoGGCfg==}
+  '@types/react@18.3.3':
+    resolution: {integrity: sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==}
 
   '@types/resolve@1.17.1':
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
 
   '@types/retry@0.12.0':
     resolution: {integrity: sha512-wWKOClTTiizcZhXnPY4wikVAwmdYHp8q6DmC+EJUzAMsycb7HB32Kh9RN4+0gExjmPmZSAQjgURXIGATPegAvA==}
-
-  '@types/scheduler@0.16.8':
-    resolution: {integrity: sha512-WZLiwShhwLRmeV6zH+GkbOFT6Z6VklCItrDioxUnv+u4Ll+8vKeFySoFyK/0ctcRpOmwAicELfmys1sDc/Rw+A==}
 
   '@types/semver@7.5.6':
     resolution: {integrity: sha512-dn1l8LaMea/IjDoHNd9J52uBbInB796CDffS6VdIxvqYCPSG0V0DzHp76GpaWnlhg88uYyPbXCDIowa86ybd5A==}
@@ -1851,7 +1845,7 @@ packages:
     engines: {node: '>= 8.9'}
     peerDependencies:
       '@babel/core': ^7.0.0
-      webpack: 5.89.0
+      webpack: 5.91.0
 
   babel-plugin-istanbul@6.1.1:
     resolution: {integrity: sha512-Y1IQok9821cC9onCx5otgFfRm7Lm+I+wwxOx738M/WLPZ9Q42m4IG5W0FNX8WLL2gYMZo3JkuXIH2DOpWM+qwA==}
@@ -3227,6 +3221,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.3:
     resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
@@ -7446,7 +7441,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.23.4
       '@testing-library/dom': 8.20.1
-      '@types/react-dom': 18.0.11
+      '@types/react-dom': 18.3.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
@@ -7578,18 +7573,13 @@ snapshots:
 
   '@types/range-parser@1.2.7': {}
 
-  '@types/react-dom@18.0.11':
+  '@types/react-dom@18.3.0':
     dependencies:
-      '@types/react': 18.2.64
+      '@types/react': 18.3.3
 
-  '@types/react-dom@18.2.21':
-    dependencies:
-      '@types/react': 18.2.64
-
-  '@types/react@18.2.64':
+  '@types/react@18.3.3':
     dependencies:
       '@types/prop-types': 15.7.11
-      '@types/scheduler': 0.16.8
       csstype: 3.1.2
 
   '@types/resolve@1.17.1':
@@ -7597,8 +7587,6 @@ snapshots:
       '@types/node': 20.10.0
 
   '@types/retry@0.12.0': {}
-
-  '@types/scheduler@0.16.8': {}
 
   '@types/semver@7.5.6': {}
 

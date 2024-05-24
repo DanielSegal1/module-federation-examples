@@ -4,7 +4,7 @@
   "devDependencies": {
     "@babel/core": "7.24.3",
     "@babel/preset-react": "7.23.3",
-    "@types/react": "18.2.64",
+    "@types/react": "18.3.3",
     "babel-loader": "8.3.0",
     "css-loader": "6.11.0",
     "file-loader": "6.2.0",
@@ -31,7 +31,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   }
 }

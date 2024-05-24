@@ -43,10 +43,10 @@ importers:
         specifier: 0.6.15
         version: 0.6.15(@rsbuild/core@0.6.15)(@swc/helpers@0.5.3)
       '@types/react':
-        specifier: ^18.2.79
+        specifier: 18.2.79
         version: 18.2.79
       '@types/react-dom':
-        specifier: ^18.2.25
+        specifier: 18.2.25
         version: 18.2.25
       typescript:
         specifier: 5.4.5
@@ -77,10 +77,10 @@ importers:
         specifier: 0.6.15
         version: 0.6.15(@rsbuild/core@0.6.15)(@swc/helpers@0.5.3)
       '@types/react':
-        specifier: ^18.2.79
+        specifier: 18.2.79
         version: 18.2.79
       '@types/react-dom':
-        specifier: ^18.2.25
+        specifier: 18.2.25
         version: 18.2.25
       typescript:
         specifier: 5.4.5
@@ -111,10 +111,10 @@ importers:
         specifier: 0.6.15
         version: 0.6.15(@rsbuild/core@0.6.15)(@swc/helpers@0.5.3)
       '@types/react':
-        specifier: ^18.2.79
+        specifier: 18.2.79
         version: 18.2.79
       '@types/react-dom':
-        specifier: ^18.2.25
+        specifier: 18.2.25
         version: 18.2.25
       typescript:
         specifier: 5.4.5

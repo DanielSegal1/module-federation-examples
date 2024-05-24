@@ -14,8 +14,8 @@
       "concurrently": "^7.6.0",
       "cypress": "13.10.0",
       "webpack": "5.91.0",
-      "@types/react": "18.0.38",
-      "@types/react-dom": "18.0.11"
+      "@types/react": "18.3.3",
+      "@types/react-dom": "18.3.0"
     }
   },
   "workspaces": {
