@@ -14,6 +14,7 @@ module.exports = {
   output: {
     publicPath: 'auto',
   },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -27,13 +28,9 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          {
-            loader: 'style-loader',
-            options: {
-              insert: require.resolve('./styleLoader.js'),
-            },
-          },
-          'css-loader',
+            'style-loader',
+            'css-loader',
+            require.resolve('./styleLoader.js'),
         ],
       },
     ],

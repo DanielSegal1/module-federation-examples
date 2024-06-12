@@ -16,6 +16,8 @@ const App = () => {
       <h1>Host Application - React Version {React.version}</h1>
       <h2>App 1</h2>
       <div id={parentElementId}></div>
+      <div className='btn'>should be cyan</div>
+      <div id='shadow'>abc</div>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { runStandalone } from '../styleLoader';
 import './styles.css';
+import './specialStyle.css';
 
 // Lazy load a dummy component which imports another global CSS rule
 const Dummy = lazy(() => import('./Dummy'));
@@ -16,6 +18,8 @@ const App = ({ isStandalone = false }) => {
     runStandalone();
   }, [isStandalone]);
 
+
+
   return (
     <div style={{ border: '1px red solid' }}>
       <h1>Remote Application - React Version {React.version}</h1>
@@ -24,6 +28,9 @@ const App = ({ isStandalone = false }) => {
       {dummyLoaded && (
         <Suspense fallback={null}>
           <Dummy />
+          {
+            createPortal(<div className='portal'>portal</div>, document.body)
+          }
         </Suspense>
       )}
     </div>

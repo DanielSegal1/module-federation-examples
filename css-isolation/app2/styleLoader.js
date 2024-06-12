@@ -1,9 +1,8 @@
 const styles = [];
 const containers = {};
 let isStandalone = false;
-
 // Create a shadow container with all styles and a placeholder for the app injection
-export const createShadowContainer = parentElementId => {
+const createShadowContainer = parentElementId => {
   const shadowContainer = document.getElementById(parentElementId);
   // Block all styles coming from the light DOM
   shadowContainer.style.all = 'initial';
@@ -20,32 +19,39 @@ export const createShadowContainer = parentElementId => {
   return appPlaceholder;
 };
 
-export const deleteShadowContainer = id => {
+const deleteShadowContainer = id => {
   delete containers[id];
 };
 
-const insertStyle = style => {
-  // Update the style list for newly created shadow containers
-  styles.push(style);
+const isSpecialStyle = (style) => {
+    return style.includes('/* special style */');
+};
 
-  if (isStandalone) {
-    document.head.appendChild(style);
-  } else {
-    // Update the style list for already existing shadow containers.
-    // This will provide them with any lazy loaded styles.
-    Promise.resolve().then(() => {
-      Object.values(containers).forEach(container => {
-        container.shadowRoot.appendChild(style.cloneNode(true));
-      });
-    });
-  }
+const insertStyle = (style, a) => {
+    // Update the style list for newly created shadow containers
+    styles.push(style);
+
+    if (isStandalone || isSpecialStyle(style)) {
+        document.head.appendChild(style);
+    } else {
+        // Update the style list for already existing shadow containers.
+        // This will provide them with any lazy loaded styles.
+        Promise.resolve().then(() => {
+        Object.values(containers).forEach(container => {
+            container.shadowRoot.appendChild(style.cloneNode(true));
+        });
+        });
+    }
+
+    return style;
 };
 
 // If this function is called it will make the style loader behave as it normally does
 // and insert the styles into the head of the document instead of the shadow DOM
-export const runStandalone = () => {
+const runStandalone = () => {
   isStandalone = true;
+  console.log('standalone');
   styles.forEach(style => document.head.appendChild(style));
 };
 
-export default insertStyle;
+module.exports = insertStyle;

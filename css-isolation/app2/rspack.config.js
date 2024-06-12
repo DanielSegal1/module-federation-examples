@@ -39,6 +39,18 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              insert: require.resolve('./styleLoader.js'),
+            },
+          },
+          'css-loader',
+        ],
+      },
     ],
   },
   plugins: [
